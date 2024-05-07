@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+// Fungsi untuk mencari nomor kuda menggunakan binary search
+int binarySearch(int kuda[], int n, int x) {
+    int low = 0, high = n - 1;
+    while (low <= high) {
+        int mid = low + (high - low) / 2;
+        if (kuda[mid] == x)
+            return mid;
+        else if (kuda[mid] < x)
+            low = mid + 1;
+        else
+            high = mid - 1;
+    }
+    return -1; // Kembali -1 jika nomor kuda tidak ditemukan
+}
+
+int main() {
+    int kuda[] = {23, 34, 65, 43, 74, 32, 84, 94, 28};
+    int n = sizeof(kuda) / sizeof(kuda[0]);
+    int cari;
+
+    printf("Masukkan nomor kuda yang ingin dicari: ");
+    scanf("%d", &cari);
+
+    int index = binarySearch(kuda, n, cari);
+    if (index != -1) {
+        printf("Nomor kuda ditemukan di index ke-%d\n", index);
+        printf("Data kuda ditemukan\n");
+    } else {
+        printf("Nomor kuda tidak ditemukan\n");
+        printf("Data kuda tidak ditemukan\n");
+    }
+
+    return 0;
+}

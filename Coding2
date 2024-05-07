@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+
+int linearSearchAndCount(const char str[], char toFind) {
+    int length = strlen(str);
+    int count = 0;
+    for (int i = 0; i < length; i++) {
+        if (str[i] == toFind)
+            count++;
+    }
+    return count;
+}
+
+int main() {
+    char nama[100];
+    printf("Masukkan nama Anda: ");
+    fgets(nama, sizeof(nama), stdin);
+    strtok(nama, "\n"); // Menghilangkan karakter newline dari fgets
+
+    char huruf;
+    printf("Masukkan huruf yang ingin dicari dalam nama: ");
+    scanf("%c", &huruf);
+
+    int jumlah = linearSearchAndCount(nama, huruf);
+    printf("Huruf '%c' muncul %d kali dalam nama '%s'\n", huruf, jumlah, nama);
+
+    return 0;
+}

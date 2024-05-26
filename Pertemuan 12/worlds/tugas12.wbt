@@ -1,0 +1,205 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/garden/protos/Slide.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/garden/protos/Swing.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/garden/protos/Barbecue.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/tables/protos/Desk.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/television/protos/Television.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/living_room_furniture/protos/Armchair.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/animals/protos/Horse.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/animals/protos/Dog.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/trees/protos/PalmTree.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/bathroom/protos/Toilet.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/bedroom/protos/Bed.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/garden/protos/PicketFenceWithDoor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/garden/protos/PicketFence.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/traffic/protos/CautionSign.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/street_furniture/protos/Fountain.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/street_furniture/protos/Atm.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/humans/pedestrian/protos/Pedestrian.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/boston_dynamics/spot/protos/Spot.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/irobot/create/protos/Create.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Grass.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.11550964978471634 0.759557646312346 -0.6401013222413005 0.4664854609580614
+  position -20.645031750261836 6.42442033204467 7.798537244290992
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 0.36 0 0
+  floorSize 10 10
+  floorAppearance Grass {
+  }
+}
+Spot {
+  hidden position_0_0 -0.2639306732698662
+  hidden position_0_1 0.2639266794849295
+  hidden position_0_2 -0.26393034422953143
+  hidden position_0_3 0.26393526831468445
+  hidden linearVelocity_0 0.023203342110957894 0.009009327270250422 -0.27315378236164733
+  hidden angularVelocity_0 0.0004246699646753661 0.0011451518901487718 0.006020865157099198
+  hidden translation_18 -0.0528 0.0006 0
+  hidden rotation_18 0 0 -1 0.2639306732698664
+  hidden position_18_0 -0.5409087310561733
+  hidden linearVelocity_18 0.02198875554527255 0.011588108476654063 -0.2735512720147564
+  hidden angularVelocity_18 0.14238181383914575 0.0539939086432329 0.006039122530607666
+  hidden translation_19 0 -0.00053 0
+  hidden rotation_19 -1 0 0 0.5409087310561734
+  hidden position_19_1 0.8687434705412255
+  hidden linearVelocity_19 -0.004251748527760917 -0.01115847058886015 -0.18897710667589918
+  hidden angularVelocity_19 -0.025498124560211985 0.5058352799999316 0.13496930218559716
+  hidden translation_21 -0.1122 -0.319729 0.182338
+  hidden rotation_21 1 0 0 0.8687434705412255
+  hidden linearVelocity_21 -0.03456595438469362 -0.027900251432779556 -0.0462811450076116
+  hidden angularVelocity_21 0.24496904818720405 -0.21962079014419478 -0.07191308520125501
+  hidden translation_22 0.0528 0.0006 0
+  hidden rotation_22 0 0 1 0.26392667948492865
+  hidden position_22_0 -0.5409143000276913
+  hidden linearVelocity_22 0.023474665936208002 0.010050334005973919 -0.2733654423850322
+  hidden angularVelocity_22 -0.1415329738104868 -0.051863345998163994 0.006048317891825226
+  hidden translation_23 0 -0.00053 0
+  hidden rotation_23 -1 0 0 0.5409143000276913
+  hidden position_23_1 0.8687412007556743
+  hidden linearVelocity_23 -0.009055054738906686 0.009357261168444726 -0.18926705868574864
+  hidden angularVelocity_23 -0.3101960100270039 0.3995907089361073 -0.12288434990482101
+  hidden translation_25 0.1122 -0.319729 0.182338
+  hidden rotation_25 0.9999999999999999 0 0 0.8687412007556742
+  hidden linearVelocity_25 -0.042066936407744636 0.0023001521583816955 -0.04663568686854421
+  hidden angularVelocity_25 -0.040156055597618825 -0.32606273059038515 0.08400803447909813
+  hidden translation_26 -0.0528 0.0006 0
+  hidden rotation_26 0 0 -1 0.2639303442295317
+  hidden position_26_0 -0.5408973963917776
+  hidden linearVelocity_26 0.022990782729351775 0.00782594566307512 -0.2729502280473644
+  hidden angularVelocity_26 0.14234508812814767 0.054143707410532746 0.006115040933593489
+  hidden translation_27 0 -0.00053 0
+  hidden rotation_27 -1 0 0 0.5408973963917776
+  hidden position_27_1 0.8687508214684123
+  hidden linearVelocity_27 -0.0036892136254430227 -0.014912169726127368 -0.18834788467377298
+  hidden angularVelocity_27 -0.025531882841458416 0.5061472776607704 0.1350910747432578
+  hidden translation_29 -0.1122 -0.319729 0.182338
+  hidden rotation_29 1 0 0 0.8687508214684124
+  hidden linearVelocity_29 -0.034504753714410724 -0.03162055306374634 -0.04567427544771421
+  hidden angularVelocity_29 0.24492969140527274 -0.2192340877811617 -0.07167834515631626
+  hidden translation_30 0.0528 0.0006 0
+  hidden rotation_30 0 0 1 0.2639352683146836
+  hidden position_30_0 -0.5409032605433677
+  hidden linearVelocity_30 0.02447343258450335 0.006249112450494647 -0.27276299240327917
+  hidden angularVelocity_30 -0.14148731542093212 -0.05167492088717808 0.005964617507669557
+  hidden translation_31 0 -0.00053 0
+  hidden rotation_31 -1 0 0 0.5409032605433675
+  hidden position_31_1 0.8687469482035527
+  hidden linearVelocity_31 -0.008510081892705355 0.005552650082053647 -0.18866630036128493
+  hidden angularVelocity_31 -0.3101449820084015 0.3999338381101179 -0.12304315985998422
+  hidden translation_33 0.1122 -0.319729 0.182338
+  hidden rotation_33 0.9999999999999999 0 0 0.8687469482035528
+  hidden linearVelocity_33 -0.04202587309640566 -0.0015088973204303623 -0.04606911210406697
+  hidden angularVelocity_33 -0.04009281085258664 -0.32562499728560457 0.08386268710025746
+  translation -0.4935394795335879 0.6525783078586378 0.3391364423781248
+  rotation 0.00014698553134301012 -0.0009508371279176453 0.9999995371518978 0.3568584542362687
+}
+Create {
+  hidden position_0_0 2196.6861715091886
+  hidden position_0_1 3006.112775188827
+  hidden linearVelocity_0 -0.09203186709784957 -0.22683494626554318 0.003913813726774223
+  hidden angularVelocity_0 -0.026421902413152447 0.031296915200415706 0.02797532258265345
+  hidden translation_1 -0.0062 -0.13589999999999997 -0.014
+  hidden rotation_1 0 -1 0 2.4286860036666416
+  hidden linearVelocity_1 -0.09246908005941079 -0.22636718882681514 0.0006043711856399175
+  hidden angularVelocity_1 7.384263682468128 -2.982117608104104 -0.012614157525087155
+  hidden translation_2 -0.0062 0.1359 -0.014
+  hidden rotation_2 0 1 0 2.750198356984736
+  hidden linearVelocity_2 -0.0922741720836723 -0.22862339955498248 -8.410758208383972e-05
+  hidden angularVelocity_2 7.379858982954075 -2.992914521727396 -0.016661890253546363
+  hidden translation_6 6.529893603911957e-05 3.461556156381107e-05 6.076889860692769e-07
+  hidden rotation_6 0.8442481921158697 -0.3789750863741513 -0.3789760863389537 1.739314000015962
+  hidden linearVelocity_6 -0.0953386905411924 -0.22855567652619407 0.002001518946597222
+  hidden angularVelocity_6 -0.026421905307393863 0.03129692281679537 0.027975255792300757
+  hidden translation_7 5.4070913052241265e-05 -4.759221349992515e-05 -4.654091326043719e-06
+  hidden rotation_7 -0.30254198658686116 0.673965970513515 0.6739719704422814 -2.55402900003287
+  hidden linearVelocity_7 -0.09408907804306527 -0.22376675825583345 -0.001242734646825534
+  hidden angularVelocity_7 -0.026421902945371323 0.031296917317300194 0.02797525603216386
+  translation -1.6161890975940607 0.5943219779823844 0.04388715425001389
+  rotation 0.0017607172679452237 0.0015749896908364251 0.9999972096371951 1.1851304559614462
+}
+Pedestrian {
+  translation 2.1679 -0.368492 1.27
+  rotation 0 0 1 1.5708
+  shirtColor 0 0 1
+}
+Pedestrian {
+  translation 2.0179 0.781506 1.27
+  rotation 0 0 1 -1.5707953071795862
+  name "pedestrian(1)"
+  shirtColor 1 0 0
+  pantsColor 1 1 1
+}
+Fountain {
+  translation 4.1 -3.73 0
+}
+CautionSign {
+  translation 5.31 -0.190001 0.08
+  rotation 0 0 1 3.14159
+}
+PicketFenceWithDoor {
+  translation 3.35 0.4 0
+}
+PicketFence {
+  translation 3.36 0.36 0
+  rotation 0 0 1 1.5708
+}
+Bed {
+  translation 0.32 3.88 0
+  rotation 0 0 1 -1.5707953071795862
+}
+Armchair {
+  translation -1.66 -1.33 0
+  rotation 0 0 1 1.5708
+}
+Horse {
+  translation 4.88 2.16 -0.05
+  rotation 0 0 1 1.5708
+}
+Dog {
+  translation -1.76 -1.16 0.44
+  rotation 0 0 1 1.5708
+}
+Television {
+  translation -1.89 2.36 1.03
+  rotation 0 0 1 -1.5707953071795862
+}
+Barbecue {
+  translation -3.25 4.77 0
+  rotation 0 0 1 -1.5707953071795862
+}
+Desk {
+  translation -1.94 2.33 0
+  rotation 0 0 1 1.5708
+}
+Swing {
+  translation -0.609998 -3.78 -0.0201333
+  rotation -2.653589999981315e-06 -2.653589999981315e-06 0.9999999999929585 -1.5707953071795862
+}
+Slide {
+  translation -4.25 -4.32 0.02
+  rotation 0 0 1 1.5708
+}
+PalmTree {
+  translation 4.5 4.34 0
+}
+Toilet {
+  translation 2.18 4.54 0
+  rotation 0 0 1 -1.5707953071795862
+}
+Atm {
+  translation 4.84 -1.2 0
+  rotation 0 0 1 3.14159
+}

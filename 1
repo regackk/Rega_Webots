@@ -1,0 +1,64 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Mahasiswa {
+    char nama[50];
+    char nim[15];
+    float nilai;
+};
+
+int main() {
+
+    int banyak_data, i;
+    struct Mahasiswa data[MAX_MAHASISWA];
+    FILE *file;
+
+
+    printf("Masukkan banyak data: ");
+    scanf("%d", &banyak_data);
+
+
+    file = fopen("data_nilai.txt", "w");
+
+
+    if (file == NULL) {
+        printf("File tidak dapat dibuka!");
+        exit(1);
+    }
+
+
+    for (i = 0; i < banyak_data; i++) {
+        printf("Masukkan Nama MHS %d: ", i+1);
+        scanf("%s", data[i].nama);
+        printf("Masukkan NIM MHS %d: ", i+1);
+        scanf("%s", data[i].nim);
+        printf("Masukkan Nilai MHS %d: ", i+1);
+        scanf("%f", &data[i].nilai);
+
+        fprintf(file, "%s %s %.2f\n", data[i].nama, data[i].nim, data[i].nilai);
+    }
+
+
+    fclose(file);
+
+
+    file = fopen("data_nilai.txt", "r");
+
+
+    if (file == NULL) {
+        printf("File tidak dapat dibuka!");
+        exit(1);
+    }
+
+
+    for (i = 0; i < banyak_data; i++) {
+        fscanf(file, "%s %s %f", data[i].nama, data[i].nim, &data[i].nilai);
+        printf("Nama: %s, NIM: %s, Nilai Akhir: %.2f\n", data[i].nama, data[i].nim, data[i].nilai);
+    }
+
+
+    fclose(file);
+
+    return 0;
+}
+

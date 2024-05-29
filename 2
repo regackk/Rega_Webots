@@ -1,0 +1,84 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+void createFile(char *filename) {
+    FILE *file = fopen(filename, "w");
+    if (file == NULL) {
+        printf("File gagal dibuat.\n");
+        return;
+    }
+    printf("File berhasil dibuat.\n");
+    fclose(file);
+}
+
+void writeFile(char *filename) {
+    FILE *file = fopen(filename, "w");
+    if (file == NULL) {
+        printf("File gagal dibuka untuk ditulis.\n");
+        return;
+    }
+    
+    char text[256];
+    printf("Masukkan teks yang ingin ditulis: ");
+    getchar(); // Untuk membersihkan newline character dari buffer input sebelumnya
+    fgets(text, sizeof(text), stdin);
+    fprintf(file, "%s", text);
+    printf("Teks berhasil ditulis ke dalam file.\n");
+    fclose(file);
+}
+
+void readFile(char *filename) {
+    FILE *file = fopen(filename, "r");
+    if (file == NULL) {
+        printf("File gagal dibuka untuk dibaca.\n");
+        return;
+    }
+    
+    char buffer[256];
+    printf("Isi file:\n");
+    while (fgets(buffer, sizeof(buffer), file) != NULL) {
+        printf("%s", buffer);
+    }
+    fclose(file);
+}
+
+int main() {
+    int choice;
+    char filename[50];
+
+    while (1) {
+        printf("Pilih operasi file:\n");
+        printf("1. Create File\n");
+        printf("2. Write File\n");
+        printf("3. Read File\n");
+        printf("4. Exit Program\n");
+        printf("Masukkan pilihan (1/2/3/4): ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1:
+                printf("Masukkan nama file: ");
+                scanf("%s", filename);
+                createFile(filename);
+                break;
+            case 2:
+                printf("Masukkan nama file: ");
+                scanf("%s", filename);
+                writeFile(filename);
+                break;
+            case 3:
+                printf("Masukkan nama file: ");
+                scanf("%s", filename);
+                readFile(filename);
+                break;
+            case 4:
+                printf("Program telah selesai.\n");
+                return 0;
+            default:
+                printf("Pilihan tidak valid.\n");
+                break;
+        }
+    }
+    return 0;
+}
